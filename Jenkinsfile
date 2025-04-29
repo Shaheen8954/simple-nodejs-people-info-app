@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-                git url: "git@github.com:Shaheen8954/simple-nodejs-people-info-app.git"
+                git url: "https://github.com/Shaheen8954/simple-nodejs-people-info-app.git", branch: "main"
             }
         }
         stage('docker build') {
